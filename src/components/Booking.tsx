@@ -217,7 +217,7 @@ const Booking: React.FC = () => {
                     name="timeSlot"
                     value={formData.timeSlot}
                     onChange={handleInputChange}
-                    className="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface appearance-none cursor-pointer"
+                    className="w-full bg-surface-container-low border-none rounded-xl pl-4 pr-10 py-3 focus:ring-2 focus:ring-primary/40 transition-all text-on-surface appearance-none cursor-pointer text-sm md:text-base"
                   >
                     <option value="">Select Time Slot</option>
                     {[
