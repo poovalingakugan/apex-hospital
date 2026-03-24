@@ -1,0 +1,76 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "tertiary-fixed": "#ffdcc5",
+        "surface-container-highest": "#e0e3e5",
+        "on-tertiary-fixed": "#301400",
+        "on-tertiary-fixed-variant": "#703700",
+        "on-surface-variant": "#414753",
+        "on-secondary": "#ffffff",
+        "error-container": "#ffdad6",
+        "tertiary-container": "#b55d00",
+        "secondary-container": "#91f78e",
+        "secondary": "#006e1c",
+        "on-surface": "#191c1e",
+        "surface-container-lowest": "#ffffff",
+        "secondary-fixed": "#94f990",
+        "surface": "#f7f9fb",
+        "surface-variant": "#e0e3e5",
+        "inverse-on-surface": "#eff1f3",
+        "on-error-container": "#93000a",
+        "on-error": "#ffffff",
+        "surface-bright": "#f7f9fb",
+        "on-primary-container": "#fefcff",
+        "on-secondary-fixed": "#002204",
+        "outline": "#717785",
+        "primary-fixed": "#d7e3ff",
+        "on-primary": "#ffffff",
+        "inverse-surface": "#2d3133",
+        "on-tertiary": "#ffffff",
+        "on-secondary-fixed-variant": "#005313",
+        "outline-variant": "#c1c6d6",
+        "surface-container-high": "#e6e8ea",
+        "primary-fixed-dim": "#aac7ff",
+        "primary-container": "#0072e2",
+        "surface-tint": "#005cb9",
+        "on-background": "#191c1e",
+        "surface-container-low": "#f2f4f6",
+        "on-primary-fixed": "#001b3e",
+        "inverse-primary": "#aac7ff",
+        "tertiary": "#904900",
+        "primary": "#005ab5",
+        "surface-dim": "#d8dadc",
+        "on-tertiary-container": "#fffbff",
+        "error": "#ba1a1a",
+        "secondary-fixed-dim": "#78dc77",
+        "surface-container": "#eceef0",
+        "tertiary-fixed-dim": "#ffb783",
+        "background": "#f7f9fb",
+        "on-secondary-container": "#00731e",
+        "on-primary-fixed-variant": "#00458e"
+      },
+      fontFamily: {
+        "headline": ["Manrope", "sans-serif"],
+        "body": ["Inter", "sans-serif"],
+        "label": ["Inter", "sans-serif"]
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s infinite',
+      }
+    },
+  },
+  plugins: [],
+}
