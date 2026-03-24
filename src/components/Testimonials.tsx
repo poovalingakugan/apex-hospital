@@ -6,7 +6,7 @@ const Testimonials: React.FC = () => {
     {
       name: 'Rajesh Kumar',
       role: 'Patient for 5 years',
-      text: 'Dr. Manickavasan is extremely patient and explains everything clearly. The best clinic in Moolakaraipatti for family care.',
+      text: 'Dr. Manickavasan is a blessing for Moolakaraipatti. His level of care and personal attention is rare. He explains medical conditions so simply that even a layman can understand. Highly recommended!',
       initial: 'R',
       color: 'border-primary',
       bg: 'bg-primary/5',
@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
     {
       name: 'Anitha S.',
       role: 'Mother of two',
-      text: 'Excellent pediatric care. My kids are actually comfortable coming here. The staff is very friendly and efficient.',
+      text: "The most child-friendly hospital in the region. Dr. Manickavasan's expertise in pediatrics gave us such peace of mind. The staff treated us like family, and the environment is so calming for the little ones.",
       initial: 'A',
       color: 'border-secondary',
       bg: 'bg-secondary/5',
@@ -22,7 +22,7 @@ const Testimonials: React.FC = () => {
     {
       name: 'Murugan P.',
       role: 'Regular Checkup',
-      text: 'High-performance clinic with digital records and minimal waiting time. Professionalism at its peak in rural healthcare.',
+      text: 'I was impressed by the modern diagnostic facilities available right here. No need to travel to the city for tests anymore. Fast, accurate results and a very professional medical team.',
       initial: 'M',
       color: 'border-primary',
       bg: 'bg-primary/5',
