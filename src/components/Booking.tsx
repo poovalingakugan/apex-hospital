@@ -262,19 +262,19 @@ const Booking: React.FC = () => {
               }}
               whileTap={{ scale: 0.98 }}
               disabled={isSubmitting || !!phoneError || !formData.phoneNumber || !date || !formData.timeSlot}
-              className={`w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-4 rounded-xl font-bold text-lg shadow-lg transition-all duration-300 ${isSubmitting || !!phoneError || !formData.phoneNumber || !date || !formData.timeSlot ? 'opacity-50 grayscale cursor-not-allowed shadow-none' : 'hover:from-blue-500 hover:to-blue-700'}`}
+              className={`w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3.5 md:py-4 rounded-xl font-bold text-base md:text-lg shadow-lg transition-all duration-300 ${isSubmitting || !!phoneError || !formData.phoneNumber || !date || !formData.timeSlot ? 'opacity-50 grayscale cursor-not-allowed shadow-none' : 'hover:from-blue-500 hover:to-blue-700'}`}
               type="submit"
             >
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-center justify-center gap-2 px-2">
                 {isSubmitting ? (
                   <>
                     <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
-                    <span>Sending...</span>
+                    <span className="text-sm md:text-base">Sending...</span>
                   </>
                 ) : (
                   <>
-                    <span className="material-symbols-outlined text-xl">event_available</span>
-                    <span>Confirm Appointment</span>
+                    <span className="material-symbols-outlined text-[22px] md:text-2xl shrink-0">event_available</span>
+                    <span className="text-sm md:text-lg">Confirm Appointment</span>
                   </>
                 )}
               </div>
