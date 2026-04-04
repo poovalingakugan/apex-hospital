@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import diagnosticImg from '../assets/diagnostic_equipment.jpg';
 
 const Booking: React.FC = () => {
@@ -94,15 +93,19 @@ const Booking: React.FC = () => {
     };
 
     try {
-      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+      const response = await fetch('/api/send-booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(templateParams),
+      });
 
-      if (!serviceId || !templateId || !publicKey) {
-        throw new Error('EmailJS configuration missing in .env');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send email');
       }
 
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
       setSubmitStatus('success');
       setFormData({ fullName: '', phoneNumber: '', service: '', timeSlot: '' });
       setDate('');
